@@ -10,11 +10,11 @@ RUN pip3 install opencv-python
 RUN pip3 install numpy
 
 RUN pip3 install pandas
-
+ENTRYPOINT["python36"]
 
 
 WORKDIR /home/ashutosh/Documents/MLworkshop/MLproject/
 COPY mnsit_keras_library_cnn.py /home/ashutosh/Documents/MLworkshop/MLproject/
 
-CMD python3 mnsit_keras_library_cnn.py
-CMD /bin/bash/
+CMD python36 mnsit_keras_library_cnn.py
+
