@@ -13,8 +13,8 @@ RUN pip3 install pandas
 ENTRYPOINT["python36"]
 
 
-WORKDIR /home/ashutosh/Documents/MLworkshop/MLproject/
-COPY mnsit_keras_library_cnn.py /home/ashutosh/Documents/MLworkshop/MLproject/
+WORKDIR /home/ashutosh/Documents/mlops
+COPY mnsit_keras_library_cnn.py /home/ashutosh/Documents/mlops
 
 CMD python36 mnsit_keras_library_cnn.py
 
